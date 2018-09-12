@@ -16,7 +16,10 @@
 	    		<include name="**/**.jar" />
 	    	</fileset>
 	    </path>	
-		<path id="application" location="${jar.dir}/${ant.project.name}.jar"/>
+		<path id="application">
+			<pathelement location="${jar.dir}/${ant.project.name}.jar"/>
+	    	<path refid="classpath"/>
+		</path>
 	
 	    <target name="clean">
 	        <delete dir="${build.dir}"/>

@@ -56,7 +56,7 @@
 	    	    </target>
 	
 	<target name="junit" depends="jar">
-	        <junit printsummary="no" haltonfailure="yes">
+	        <junit printsummary="no" haltonfailure="no">
 	            <classpath>
 	                <path refid="classpath"/>
 	                <path refid="application"/>

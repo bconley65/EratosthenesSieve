@@ -10,10 +10,10 @@
 		<property name="main.dir" value="src/main"/>
 
 	    <path id="classpath">
-	    	<fileset dir="/Users/williamconley/.p2/pool/plugins/org.apache.ant_1.10.3.v20180417-1627/lib/org.junit_4.12.0.v201504281640">
-	    		<include name="**/junit*.jar" />
-	    		<include name="**/*test*.jar" />
-	    		<include name="**/**.jar" />
+	    	<fileset dir="/usr/local/Cellar/ant/1.10.5/libexec/lib">
+	    		<include name="org.junit.**.jar" />
+	    		<include name="org.*test*.jar" />
+	    		<include name="**hamcrest**.jar" />
 	    	</fileset>
 	    </path>	
 		<path id="application">

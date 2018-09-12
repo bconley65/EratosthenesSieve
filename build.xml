@@ -51,7 +51,7 @@
 	                <path refid="application"/>
 	            </classpath>
 	            <batchtest fork="yes">
-	                <fileset dir="${test.dir}" includes="**/test.UnitTest.java"/>
+	                <fileset dir="${test.dir}" includes="**UnitTest.java"/>
 	            </batchtest>
 	        </junit>
 	    </target>

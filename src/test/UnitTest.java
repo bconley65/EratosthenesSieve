@@ -15,7 +15,7 @@ public class UnitTest {
 	@Test
 	public void validTest() {
 		
-		int n = 9;
+		int n = 20;
 		
 
 		List<Integer> testResults = new ArrayList<>(Arrays.asList(2, 3, 5, 7));

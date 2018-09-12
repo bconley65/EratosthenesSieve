@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src">
 		<attributes>
+			<attribute name="ignore_optional_problems" value="true"/>
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>

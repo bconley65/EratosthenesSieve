@@ -6,6 +6,8 @@
 	    <property name="jar.dir" value="${build.dir}/jar"/>
 	    <property name="main-class" value="main.CalculatePrimeNumbers"/>
 		<property name="lib.dir" value="lib"/>
+		<property name="test.dir" value="src/test"/>
+		<property name="main.dir" value="src/main"/>
 
 	    <path id="classpath">
 	        <fileset dir="${lib.dir}" includes="**/*.jar"/>
@@ -49,7 +51,7 @@
 	                <path refid="application"/>
 	            </classpath>
 	            <batchtest fork="yes">
-	                <fileset dir="${src.dir}" includes="**/test.UnitTest.java"/>
+	                <fileset dir="${test.dir}" includes="**/test.UnitTest.java"/>
 	            </batchtest>
 	        </junit>
 	    </target>

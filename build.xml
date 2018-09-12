@@ -10,11 +10,8 @@
 		<property name="main.dir" value="src/main"/>
 
 	    <path id="classpath">
-	    	<fileset dir="/usr/local/Cellar/ant/1.10.5/libexec/lib">
-	    		<include name="org.junit.**.jar" />
-	    		<include name="org.*test*.jar" />
-	    		<include name="**hamcrest**.jar" />
-	    	</fileset>
+	    	 <fileset dir="${lib.dir}" includes="lib/junit.jar" />
+	    	<fileset dir="${lib.dir}" includes="lib/org.hamcrest.core.jar" />
 	    </path>	
 		<path id="application">
 			<pathelement location="${jar.dir}/${ant.project.name}.jar"/>

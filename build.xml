@@ -10,7 +10,7 @@
 		<property name="main.dir" value="src/main"/>
 
 	    <path id="classpath">
-	    	<fileset dir="/Users/williamconley/.p2/pool/plugins/org.apache.ant_1.10.3.v20180417-1627/lib">
+	    	<fileset dir="/usr/local/Cellar/ant/1.10.5/libexec/lib">
 	    		<include name="junit.jar" />
 	    		<include name="org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
 	    		<include name="**/junit*.jar" />
@@ -62,7 +62,7 @@
 	                <path refid="application"/>
 	            </classpath>
 	            <batchtest fork="yes">
-	                <fileset dir="${test.dir}" includes="**UnitTest.java"/>
+	                <fileset dir="${test.dir}" includes="UnitTest.java"/>
 	            </batchtest>
 	        </junit>
 	    </target>

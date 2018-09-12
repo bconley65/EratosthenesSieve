@@ -10,9 +10,11 @@
 		<property name="main.dir" value="src/main"/>
 
 	    <path id="classpath">
-	        <fileset dir="${lib.dir}" includes="**/*.jar"/>
-	    	<pathelement location="lib/junit-4.12.jar"/>
-    	    <pathelement location="lib/hamcrest-core-1.3.jar"/>
+	    	<fileset dir="${lib.dir}">
+				<include name="**/junit*.jar" />
+				<include name="**/*test*.jar" />
+	    		<include name="**/**.jar" />
+			</fileset>
 	    </path>	
 		<path id="application" location="${jar.dir}/${ant.project.name}.jar"/>
 	
